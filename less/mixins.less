@@ -3,9 +3,10 @@
 // component margins
 .componentMargin() {
     max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
+    width    : 100%;
+    margin   : 0 auto;
 }
+
 // flex display
 .flexdisplay(@Direction) {
     display       : flex;
@@ -20,6 +21,16 @@
     font-weight: 600;
 }
 
-.buttonStyles() {
-    // sphd
+// button styles
+
+.buttonStyles(@textalign, @fontweight) {
+    border          : 2px solid @navigation-border;
+    margin-right    : 2em;
+    padding         : 1.5rem 4rem;
+    text-align      : @textalign;
+    border-radius   : 20px;
+    background-color: @button-bg;
+    font-size       : 2rem;
+    font-weight     : @fontweight;
+    color           : @white;
 }
