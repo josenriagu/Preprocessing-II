@@ -6,6 +6,14 @@
     width    : 100%;
     margin   : 0 auto;
 
+    @media @tablet {
+        max-width: 600px;
+    }
+
+    @media @tabletmini {
+        max-width: 500px;
+    }
+
     @media @mobile {
         max-width: 450px;
     }
@@ -37,12 +45,12 @@
     font-size       : @fontsize;
     font-weight     : 600;
     color           : @white;
-    margin-bottom: @marginbottom;
+    margin-bottom   : @marginbottom;
 }
 
 .contentmobile() {
     @media @mobile {
-        width: 100%;
+        width  : 100%;
         padding: 0rem;
-      }
+    }
 }
