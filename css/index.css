@@ -147,6 +147,11 @@ h1 {
   font-size: 4rem;
   font-weight: 600;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
@@ -188,11 +193,25 @@ img {
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
 }
 @media (max-width: 500px) {
   .headernav .inner {
     max-width: 450px;
+  }
+}
+@media (max-width: 500px) {
+  .headernav .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.8rem 0 1rem 0;
+  }
+}
+@media (max-width: 500px) {
+  .headernav h1 {
+    margin-bottom: 1.5rem;
   }
 }
 .headernav a {
@@ -201,12 +220,11 @@ img {
   font-size: 1.6rem;
   font-weight: 600;
   color: #212529;
-  margin-right: 4rem;
+  margin-right: 3rem;
 }
 @media (max-width: 500px) {
-  .headernav {
-    display: flex;
-    flex-direction: row;
+  .headernav a {
+    margin-right: 4rem;
   }
 }
 .footer {
