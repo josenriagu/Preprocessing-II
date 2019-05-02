@@ -6,7 +6,7 @@ header {
   }
 
   div:nth-of-type(3) {
-    padding-top: 2rem;
+    padding-top   : 2rem;
     padding-bottom: 1rem;
     .componentMargin();
     border-bottom: 2px dashed silver;
@@ -93,7 +93,7 @@ header {
       margin-bottom: 30px;
 
       @media @mobile {
-        width: 85%;
+        width : 85%;
         margin: 0 auto;
       }
     }
@@ -108,6 +108,63 @@ header {
 
     @media @mobile {
       .flexdisplay(column);
+    }
+  }
+
+  .form {
+    .pStyles();
+    .componentMargin();
+    margin : 0 0 2rem 0;
+    padding: 0 2rem;
+
+    form> :last-child {
+      margin-bottom: 0;
+    }
+
+    .fields {
+      .flexdisplay(row);
+
+      .half {
+        width: 50%;
+        background-color: green;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+      }
+
+      .full {
+        .flexdisplay(column);
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+
+    #name,
+    #email,
+    #subject,
+    #message {
+      // background-color: gray;
+      // .buttonStyles(center, 2rem, 0rem);
+      border             : 2px solid @navigation-border;
+      margin   :0 2em;
+      padding            : 1rem 2rem;
+      border-radius      : 1.5rem;
+      background-color   : inherit;
+
+      font-weight: 600;
+    }
+
+    .btn {
+      .buttonStyles(center, 1.5rem, 0rem);
+      width      : 40%;
+      padding-top: 2rem;
+
+      @media @mobile {
+        .buttonStyles(center, 1.8rem, 3rem);
+      }
+    }
+
+    .half {
+      width: 50%;
     }
   }
 }

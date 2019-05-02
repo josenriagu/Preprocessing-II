@@ -93,8 +93,33 @@
       </div>
     </section>
     <section class="form">
-      <form action="">
-        
+        <h2>Request Form</h2>
+      <form method="post" action="#">
+        <div class="top-fields">
+          <div class="half">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" />
+          </div>
+          <div class="half">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email" />
+          </div>
+        </div>
+        <div class="bottom-fields">
+          <div class="full">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" placeholder="Enter a subject">
+          </div>
+          <div class="full">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4" placeholder="Write a message"></textarea>
+          </div>
+        </div>
+        <div class="btn">Send Request</div>
+        <!-- <ul class="actions">
+              <li><input type="submit" value="Send Message" class="btn" /></li>
+              <li><input type="reset" value="Reset" /></li>
+            </ul> -->
       </form>
     </section>
   </div><!-- container -->

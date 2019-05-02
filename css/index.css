@@ -383,3 +383,79 @@ header div:nth-of-type(3) {
     flex-direction: column;
   }
 }
+.home .form {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-weight: 600;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  margin: 0 0 2rem 0;
+  padding: 0 2rem;
+}
+@media (max-width: 500px) {
+  .home .form {
+    max-width: 450px;
+  }
+}
+.home .form form > :last-child {
+  margin-bottom: 0;
+}
+.home .form .fields {
+  display: flex;
+  flex-direction: row;
+}
+.home .form .fields .half {
+  width: 50%;
+  background-color: green;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.home .form .fields .full {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.home .form #name,
+.home .form #email,
+.home .form #subject,
+.home .form #message {
+  border: 2px solid #C0C0C0;
+  margin: 0 2em;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  background-color: inherit;
+  font-weight: 600;
+}
+.home .form .btn {
+  border: 2px solid #C0C0C0;
+  margin-right: 2em;
+  padding: 1.5rem 4rem;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #17A2B8;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 0rem;
+  width: 40%;
+  padding-top: 2rem;
+}
+@media (max-width: 500px) {
+  .home .form .btn {
+    border: 2px solid #C0C0C0;
+    margin-right: 2em;
+    padding: 1.5rem 4rem;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #17A2B8;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 3rem;
+  }
+}
+.home .form .half {
+  width: 50%;
+}
