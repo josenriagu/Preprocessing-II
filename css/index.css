@@ -403,6 +403,9 @@ header div:nth-of-type(3) {
   color: #FFFFFF;
   margin-bottom: 0rem;
 }
+.home .content-pick .btn:hover {
+  cursor: pointer;
+}
 @media (max-width: 500px) {
   .home .content-pick .btn {
     border: 2px solid #C0C0C0;
@@ -415,6 +418,9 @@ header div:nth-of-type(3) {
     font-weight: 600;
     color: #FFFFFF;
     margin-bottom: 3rem;
+  }
+  .home .content-pick .btn:hover {
+    cursor: pointer;
   }
 }
 @media (max-width: 500px) {
@@ -491,6 +497,9 @@ header div:nth-of-type(3) {
   width: 40%;
   padding-top: 2rem;
 }
+.home .form .btn:hover {
+  cursor: pointer;
+}
 @media (max-width: 500px) {
   .home .form .btn {
     border: 2px solid #C0C0C0;
@@ -503,6 +512,9 @@ header div:nth-of-type(3) {
     font-weight: 600;
     color: #FFFFFF;
     margin-bottom: 3rem;
+  }
+  .home .form .btn:hover {
+    cursor: pointer;
   }
 }
 .home .form .half {
