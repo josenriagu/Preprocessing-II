@@ -27,14 +27,22 @@
 
 // button styles
 
-.buttonStyles(@textalign, @fontweight) {
+.buttonStyles(@textalign, @fontsize, @marginbottom) {
     border          : 2px solid @navigation-border;
     margin-right    : 2em;
     padding         : 1.5rem 4rem;
     text-align      : @textalign;
     border-radius   : 20px;
     background-color: @button-bg;
-    font-size       : 2rem;
-    font-weight     : @fontweight;
+    font-size       : @fontsize;
+    font-weight     : 600;
     color           : @white;
+    margin-bottom: @marginbottom;
+}
+
+.contentmobile() {
+    @media @mobile {
+        width: 100%;
+        padding: 0rem;
+      }
 }
