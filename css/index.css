@@ -145,18 +145,22 @@ h5 {
 }
 h1 {
   font-size: 4rem;
+  font-weight: 600;
 }
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+  font-weight: 600;
 }
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
+  font-weight: 600;
 }
 p {
   line-height: 1.5;
   font-size: 1.6rem;
+  font-weight: 600;
   padding-bottom: 10px;
 }
 img {
@@ -169,18 +173,23 @@ img {
   margin: 0 auto;
 }
 .headernav {
+  border-bottom: 2px dashed silver;
+}
+.headernav .inner {
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
-  border-bottom: 2px dashed silver;
-  padding: 2rem 27.5rem;
+  padding: 2rem 0;
 }
 .headernav a {
   text-decoration: none;
   line-height: 1.5;
   font-size: 1.6rem;
+  font-weight: 600;
   color: #212529;
   margin-right: 4rem;
 }
@@ -198,6 +207,19 @@ img {
 header {
   display: flex;
   flex-direction: column;
+}
+header div:nth-of-type(2) {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header div:nth-of-type(3) {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px dashed silver;
 }
 .home .content-section {
   margin: 30px 0;
@@ -244,4 +266,7 @@ header {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  border: 2px dashed silver;
 }

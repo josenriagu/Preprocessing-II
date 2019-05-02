@@ -1,11 +1,15 @@
 // Navigation Styles here
 .headernav {
-    .flexdisplay(row);
-    justify-content: space-between;
-    align-items: baseline;
-    width: 100%;
     border-bottom: 2px dashed silver;
-    padding: 2rem 27.5rem;
+    
+    .inner {
+        .componentMargin();
+        .flexdisplay(row);
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+        padding: 2rem 0;
+    }
 
     a {
         text-decoration: none;
