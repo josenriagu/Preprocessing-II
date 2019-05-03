@@ -1,61 +1,171 @@
+header {
+  .flexdisplay(column);
+
+  div:nth-of-type(2) {
+    .componentMargin();
+  }
+
+  div:nth-of-type(3) {
+    padding-top   : 2rem;
+    padding-bottom: 1rem;
+    .componentMargin();
+    border-bottom: 2px dashed silver;
+  }
+}
+
 .home {
 
   .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
+    margin         : 30px 0;
+    display        : flex;
+    flex-wrap      : wrap;
     justify-content: space-between;
 
-   
-    
+
+
     .text-content {
-      width: 48%;
+      width        : 48%;
       padding-right: 1%;
+
+      .contentmobile();
     }
 
     .img-content {
-      width: 48%;
+      width       : 48%;
       padding-left: 1%;
 
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%
+        }
       }
+
+      .contentmobile();
+    }
+
+    @media @mobile {
+      .flexdisplay(column);
     }
   }
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom : 2px dashed @navigation-border;
 
     .text-content {
-      padding-left: 1%;
+      padding-left : 1%;
       padding-right: 0;
     }
 
     .img-content {
       padding-right: 1%;
-      padding-left: 0;
+      padding-left : 0;
+    }
+
+    @media @mobile {
+      .flexdisplay(column-reverse);
     }
   }
 
   .content-destination {
-    width: 75%;
+    width : 75%;
     margin: 0 auto 30px;
 
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      width: 100%;
+    }
   }
 
   .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
+    padding-top    : 30px;
+    border-top     : 2px dashed @navigation-border;
+    display        : flex;
     justify-content: space-between;
 
     .destination {
-      width: 30%;
+      width        : 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width : 85%;
+        margin: 0 auto;
+      }
+    }
+
+    .btn {
+      .buttonStyles(center, 2rem, 0rem);
+
+      @media @mobile {
+        .buttonStyles(center, 1.8rem, 3rem);
+      }
+    }
+
+    @media @mobile {
+      .flexdisplay(column);
     }
   }
-}// home
+
+  .form {
+    .pStyles();
+    .componentMargin();
+    margin : 0 0 2rem 0;
+    padding: 0 2rem;
+
+    form> :last-child {
+      margin-bottom: 0;
+    }
+
+    .fields {
+      .flexdisplay(row);
+
+      .half {
+        width           : 50%;
+        justify-content : space-between;
+        margin-bottom   : 2rem;
+      }
+
+      .full {
+        .flexdisplay(column);
+        width        : 100%;
+        margin-bottom: 2rem;
+      }
+    }
+
+    #name,
+    #email,
+    #subject,
+    #message {
+      // background-color: gray;
+      // .buttonStyles(center, 2rem, 0rem);
+      border          : 2px solid @navigation-border;
+      margin          : 0 2em;
+      padding         : 1rem 2rem;
+      border-radius   : 1.5rem;
+      background-color: inherit;
+
+      font-weight: 600;
+    }
+
+    .btn {
+      .buttonStyles(center, 1.5rem, 0rem);
+      width      : 40%;
+      padding-top: 2rem;
+
+      @media @mobile {
+        .buttonStyles(center, 1.8rem, 3rem);
+      }
+    }
+
+    .half {
+      width: 50%;
+    }
+  }
+}
+
+// home

@@ -1,1 +1,37 @@
 // Navigation Styles here
+.headernav {
+    border-bottom: 2px dashed @navigation-border;
+
+    .inner {
+        .componentMargin();
+        .flexdisplay(row);
+        justify-content: space-between;
+        align-items    : baseline;
+        width          : 100%;
+        padding        : 2.5rem 0;
+
+        @media @mobile {
+            .flexdisplay(column);
+            justify-content: flex-end;
+            align-items    : center;
+            padding        : 1.8rem 0 1rem 0;
+        }
+    }
+
+    h1 {
+        @media @mobile {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        .pStyles();
+        color       : @font-color;
+        margin-right: 3rem;
+
+        @media @mobile {
+            margin-right: 4rem;
+        }
+    }
+}
